@@ -62,16 +62,21 @@ fieldset[disabled] .btn-danger {
   background-image: none;
 }
 .btn-default {
-  text-shadow: 0 1px 0 #fff;
-  background-image: -webkit-linear-gradient(top, #fff 0%, #e0e0e0 100%);
-  background-image:      -o-linear-gradient(top, #fff 0%, #e0e0e0 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e0e0e0));
-  background-image:         linear-gradient(to bottom, #fff 0%, #e0e0e0 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  background-repeat: repeat-x;
-  border-color: #dbdbdb;
-  border-color: #ccc;
+background: linear-gradient(212deg, #244a66, #1fc213);
+background-size: 400% 400%;
+
+-webkit-animation: AnimationName 29s ease infinite;
+animation: AnimationName 29s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:78% 0%}
+    50%{background-position:23% 100%}
+    100%{background-position:78% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:78% 0%}
+    50%{background-position:23% 100%}
+    100%{background-position:78% 0%}
 }
 .btn-default:hover,
 .btn-default:focus {
