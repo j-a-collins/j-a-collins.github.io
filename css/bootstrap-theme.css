@@ -62,21 +62,27 @@ fieldset[disabled] .btn-danger {
   background-image: none;
 }
 .btn-default {
-background: linear-gradient(212deg, #244a66, #1fc213);
+ background: linear-gradient(159deg, #8dff00, #00a8ff);
 background-size: 400% 400%;
 
--webkit-animation: AnimationName 29s ease infinite;
-animation: AnimationName 29s ease infinite;
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:78% 0%}
-    50%{background-position:23% 100%}
-    100%{background-position:78% 0%}
+-webkit-animation: AnimationName 12s ease infinite;
+-moz-animation: AnimationName 12s ease infinite;
+animation: AnimationName 12s ease infinite;
+ 
+ @-webkit-keyframes AnimationName {
+    0%{background-position:0% 34%}
+    50%{background-position:100% 67%}
+    100%{background-position:0% 34%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 34%}
+    50%{background-position:100% 67%}
+    100%{background-position:0% 34%}
 }
 @keyframes AnimationName {
-    0%{background-position:78% 0%}
-    50%{background-position:23% 100%}
-    100%{background-position:78% 0%}
+    0%{background-position:0% 34%}
+    50%{background-position:100% 67%}
+    100%{background-position:0% 34%}
 }
 .btn-default:hover,
 .btn-default:focus {
